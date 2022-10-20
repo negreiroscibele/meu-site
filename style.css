@@ -18,10 +18,15 @@
 .navbar {
   position: fixed;
   width: 100%;
-  background-color: rgb(49, 173, 182);
   padding: 15px 0;
   font-family: 'Ubuntu', sans-serif;
   height: 80px;
+  transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+  background-color: rgb(49, 173, 182);
+  padding: 15px 0;
 }
 
 .navbar .max-width {
@@ -40,13 +45,18 @@
   color: rgb(250, 240, 99);
 }
 
+.navbar.sticky .logo a span {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
 .navbar .menu li {
   list-style: none;
   display: inline-block;
 }
 
 .navbar .menu li a {
-  color: #fff;
+  color: white;
   font-size: 18px;
   font-weight: 500;
   margin-left: 25px;
@@ -59,31 +69,24 @@
 
 
 /* ------- HOME ---------*/
-
-.home .wrapper-bg {
-position: relative;
-z-index: -1;
-height: 100vh;
-width: 100%;
-overflow: hidden;
-background-color: rgb(12, 10, 10);
-}
-
-.home .background img {
+.home {
+  display: flex;
+  background: url(/images/pexels-negative-space-92904.jpg) no-repeat center;
+  background-size: 100% 100%;
   height: 100vh;
-  width: 100%;
-  object-fit: cover;
-  overflow: hidden;
-  filter: blur(2px);
-  opacity: 0.5;
+  color: #fff;
+  min-height: 500px;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .home .max-width {
-  position: absolute;
-  top: 30%;
+  margin: 310px 0 auto 40px;
+}
+
+.home .max-width {
   color: #fff;
   font-family: 'Ubuntu', sans-serif;
-  margin: auto 0 auto 40px;
+  margin: 310px 0 auto 40px;
 }
 
 .home .home-content .text-1 {
@@ -112,7 +115,43 @@ background-color: rgb(12, 10, 10);
   font-weight: 500;
 }
 
+/*----- MENU MOBILE -----*/
 
+.menu-bottom {
+color: #fff;
+font-size: 27px;
+cursor: pointer;
+display: none;
+}
+
+/*-----RESPONSIVE-----*/
+@media(max-width: 947px){
+  .max-width {
+    padding: 0  50px;
+  }
+  .menu-bottom {
+    display: block;
+    z-index: 999;
+  }
+  .navbar .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background: rgb(49, 173, 182);
+    padding-top: 80px;
+    text-align: center;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a{
+    display: inline-block;
+    margin: 20px 10px;
+    font-size: 25px;
+  }
+}
 
 
 
