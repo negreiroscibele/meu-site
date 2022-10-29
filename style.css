@@ -57,7 +57,7 @@
 
 .navbar .menu li a {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
@@ -92,6 +92,7 @@
   font-size: 75px;
   font-weight: 500;
   margin-left: -3px;
+  color: rgb(49, 173, 182);
 }
 
 .home .home-content .text-3 {
@@ -99,7 +100,7 @@
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
-  color: rgb(250, 240, 99);
+  color: #fff;
   font-weight: 500;
 }
 
@@ -115,8 +116,8 @@
 }
 
 .home .home-content a:hover {
-  color:rgb(250, 240, 99);
-  border: 2px solid rgb(250, 240, 99);
+  color:rgb(49, 173, 182);
+  border: 2px solid #fff;
   background:  none;
 }
 
@@ -223,20 +224,28 @@ display: none;
 /* -------ABOUT------ */
 
 section {
- padding: 100px 0; 
+ padding: 80px 0; 
 }
 .about {
   font-family: 'Roboto', sans-serif;
 }
 
+.about .about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .about .tittle {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 60px;
-  padding-bottom: 20px;
+  padding: 10px 10px;
   position: relative;
+  color: gray;
 }
 
 .about .tittle::before {
@@ -257,8 +266,44 @@ section {
   width: 400px;
   height: 400px;
   object-fit: cover;
+  border: 6px solid white;
+  border-radius: 20px;
 }
 
 .about .about-content .column-right {
   width: 55%;
+  background-color: rgba(168, 204, 204, 0.473);
+  padding: 50px;
+  border: 5px white;
+  border-radius: 7px;
+}
+
+.about .about-content .column-right .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.about .about-content .column-right h2 {
+  color: rgb(49, 173, 182);
+  margin-bottom: 20px;
+}
+.about .about-content .column-right p {
+  font-size: 20px;
+
+}
+
+.about .about-content .column-right a {
+  display: inline-block;
+  background: rgb(49, 173, 182);
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin-top: 15px;
+  transition: all 0.3s ease ;
+}
+
+.about .about-content .column-right a:hover {
+  color: rgb(250, 240, 99);
 }
