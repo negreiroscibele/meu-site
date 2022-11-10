@@ -20,12 +20,13 @@
   width: 100%;
   padding: 15px 0;
   font-family: 'Ubuntu', sans-serif;
-  height: 80px;
+  height: 70px;
   transition: all 0.3s ease;
+  background-color: black;
 }
 
 .navbar.sticky {
-  background-color: rgb(49, 173, 182);
+  background-color: black;
   padding: 15px 0;
 }
 
@@ -42,7 +43,7 @@
 }
 
 .navbar .logo a span {
-  color: rgb(49, 173, 182);
+  color: rgb(250, 240, 99);
 }
 
 .navbar.sticky .logo a span {
@@ -67,7 +68,6 @@
   color: rgb(250, 240, 99);
 }
 
-
 /* ------- HOME ---------*/
 .home {
   display: flex;
@@ -77,7 +77,6 @@
   font-family: 'Ubuntu', sans-serif;
   background-image: url(/images/cover.png);
   background-size: 100% 100%;
-  
 }
 
 .home .max-width {
@@ -92,7 +91,7 @@
   font-size: 75px;
   font-weight: 500;
   margin-left: -3px;
-  color: rgb(49, 173, 182);
+  color: #fff;
 }
 
 .home .home-content .text-3 {
@@ -100,133 +99,45 @@
   margin: 5px 0;
 }
 .home .home-content .text-3 span {
-  color: #fff;
+  color: rgb(250, 240, 99);
   font-weight: 500;
 }
 
 .home .home-content a {
   display: inline-block;
-  background:rgb(49, 173, 182);
-  color:white ;
+  background: black;
+  color: white;
   font-size: 25px;
   padding: 12px 36px;
-  border: 2px solid rgb(49, 173, 182);
+  border: 2px solid black;
   border-radius: 10px;
   margin-top: 20px;
 }
 
 .home .home-content a:hover {
-  color:rgb(49, 173, 182);
-  border: 2px solid #fff;
-  background:  none;
+  color: black;
+  border: 2px solid rgb(250, 240, 99);
+  background: none;
 }
-
 
 /*----- MENU MOBILE -----*/
 
 .menu-bottom {
-color: #fff;
-font-size: 26px;
-cursor: pointer;
-display: none;
-}
-
-
-/*-----RESPONSIVE-----*/
-@media (max-width: 1300px){
-  .navbar .max-width {
-    margin-left: 0;
-  }
-}
-@media(max-width: 1104px){
-  .navbar .max-width {
-    margin-left: 0;
-  }
-}
-
-@media(max-width: 991px){
-  .navbar .max-width {
-    padding: 0 50px;
-  }
-}
-
-@media(max-width: 947px){
-  .max-width {
-    max-width: 800px;
-    padding: 0  50px;
-  }
-  .menu-bottom {
-    display: block;
-    z-index: 999;
-  }
-  .navbar .menu {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    left: -100%;
-    top: 0;
-    background: rgb(49, 173, 182);
-    padding-top: 80px;
-    text-align: center;
-    transition: all 0.3s ease;
-  }
-  .navbar .menu.active {
-    left: 0;
-  }
-
-  .navbar .menu li {
-    display: block;
-  }
-  .navbar .menu li a {
-    display: inline-block;
-    margin: 20px 0;
-    font-size: 25px;
-  }
-
-  .home .home-content .text-2 {
-    font-size: 70px;
-  }
-  
-  .home .home-content .text-3 {
-      font-size: 35px;
-  }
-
-  .home .home-content a {
-    font-size: 23px;
-    padding: 10px 30px;
-  }
-}
-
-@media(max-width: 690px){
-  .home .home-content .text-2 {
-    font-size: 60px;
-  }
-  
-  .home .home-content .text-3 {
-      font-size: 32px;
-  }
-
-  .home .home-content a {
-    font-size: 20px;
-  }
-}
-
-@media(max-width: 500px){
-  .home .home-content .text-2 {
-    font-size: 50px;
-  }
-  
-  .home .home-content .text-3 {
-      font-size: 27px;
-  }
+  color: #fff;
+  font-size: 26px;
+  cursor: pointer;
+  display: none;
 }
 
 /* -------ABOUT------ */
 
 section {
- padding: 80px 0; 
+  padding: 50px 0;
+  height: fit-content;
+  background-color: rgb(250, 240, 99);
 }
-.about {
+.about,
+.services {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -240,42 +151,32 @@ section {
 .about .tittle {
   font-family: 'Roboto', sans-serif;
   text-align: center;
-  font-size: 40px;
+  font-size: 43px;
   font-weight: 500;
   margin-bottom: 60px;
-  padding: 10px 10px;
+  padding-bottom: 10px;
   position: relative;
-  color: gray;
-}
-
-.about .tittle::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 180px;
-  height: 2px;
-  background-color: rgb(49, 173, 182);
-  transform: translateX(-50%);
+  color: black;
 }
 
 .about .about-content .column-left {
+  display: flex;
   width: 45%;
 }
 .about .about-content .column-left img {
   width: 400px;
   height: 400px;
   object-fit: cover;
-  border: 6px solid white;
+  border: 6px solid black;
   border-radius: 20px;
 }
 
 .about .about-content .column-right {
   width: 55%;
-  background-color: rgba(168, 204, 204, 0.473);
+  background-color: rgba(255, 255, 255, 0.678);
   padding: 50px;
   border: 5px white;
-  border-radius: 7px;
+  border-radius: 10px;
 }
 
 .about .about-content .column-right .text {
@@ -285,25 +186,84 @@ section {
 }
 
 .about .about-content .column-right h2 {
-  color: rgb(49, 173, 182);
+  color: black;
   margin-bottom: 20px;
 }
 .about .about-content .column-right p {
   font-size: 20px;
-
 }
 
 .about .about-content .column-right a {
   display: inline-block;
-  background: rgb(49, 173, 182);
+  background: black;
   color: #fff;
   font-size: 20px;
   padding: 10px 10px;
   border-radius: 5px;
   margin-top: 15px;
-  transition: all 0.3s ease ;
+  transition: all 0.3s ease;
 }
 
 .about .about-content .column-right a:hover {
   color: rgb(250, 240, 99);
+}
+
+.about .about-content .column-left {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 60px;
+}
+
+/* -------SERVICES------ */
+.services,
+.teams {
+  background: #111;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  height: 100%;
+}
+.services .tittle {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  position: relative;
+  color: #fff;
+}
+.services .service-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services .service-content .card {
+  width: calc(33% - 20px);
+  background: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.services .service-content .card:hover {
+  background: rgb(250, 240, 99);
+}
+.services .service-content .card .box {
+  transition: all 0.3s ease;
+}
+.services .service-content .card:hover .box {
+  transform: scale(1.05);
+}
+.services .service-content .card ion-icon {
+  font-size: 70px;
+  color: rgb(250, 240, 99);
+}
+.services .service-content .card:hover ion-icon {
+  color: #fff;
+}
+.services .service-content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
 }
