@@ -58,7 +58,7 @@
 
 .navbar .menu li a {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   margin-left: 25px;
   transition: color 0.3s ease;
@@ -117,17 +117,9 @@
 .home .home-content a:hover {
   color: black;
   border: 2px solid rgb(250, 240, 99);
-  background: none;
+  background: rgb(250, 240, 99);
 }
 
-/*----- MENU MOBILE -----*/
-
-.menu-bottom {
-  color: #fff;
-  font-size: 26px;
-  cursor: pointer;
-  display: none;
-}
 
 /* -------ABOUT------ */
 
@@ -137,7 +129,7 @@ section {
   background-color: rgb(250, 240, 99);
 }
 .about,
-.services {
+.services, .contact {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -148,11 +140,11 @@ section {
   justify-content: space-between;
 }
 
-.about .tittle {
+.about .tittle  {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 43px;
-  font-weight: 500;
+  font-weight: 500px;
   margin-bottom: 60px;
   padding-bottom: 10px;
   position: relative;
@@ -226,7 +218,7 @@ section {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 500px;
   margin-bottom: 60px;
   padding-bottom: 10px;
   position: relative;
@@ -267,3 +259,43 @@ section {
   font-weight: 500;
   margin: 10px 0 7px 0;
 }
+
+/*----- CONTACT -----*/
+
+.contact .tittle  {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  font-size: 43px;
+  font-weight: 500px;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  position: relative;
+  color: black;
+}
+.contact .contact-content {
+  align-items: flex-start;
+  }
+
+.contact .contact-content .column {
+  width: calc(50% - 30px);
+}
+
+.contact .contact-content .left  .icons {
+  margin: 10px 0;
+}
+
+.contact .contact-content .row ion-icon {
+  font-size: 25px;
+  color: black;
+}
+.contact .contact-content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+
+.contact .contact-content .row .info {
+  margin-left: 30px;
+}
+
+
